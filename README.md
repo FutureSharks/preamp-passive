@@ -1,4 +1,4 @@
-# Preamp V1
+# Preamp - Passive
 
 This is the Arduino code to run a HiFi passive preamplifier. It has the following features:
 
