@@ -305,8 +305,6 @@ void loop() {
   encoder0PinALast = n;
   // Decode the IR if recieved
   if (irrecv.decode(&results)) {
-    Serial.println ("IRRRRRRRRRRRRRRR");
-    Serial.println (results.value);
     if (results.value == 2011287694) {
       lastIRoperation = "volumeUp";
       changeVolume(iRIncrement);
