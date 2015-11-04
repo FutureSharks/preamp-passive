@@ -305,23 +305,23 @@ void loop() {
   encoder0PinALast = n;
   // Decode the IR if recieved
   if (irrecv.decode(&results)) {
-    if (results.value == 2011287694) {
+    if (results.value == 2011287569) {
       lastIRoperation = "volumeUp";
       changeVolume(iRIncrement);
       timeOfLastIRChange = millis();
     }
-    if (results.value == 2011279502) {
+    if (results.value == 2011279377) {
       lastIRoperation = "volumeDown";
       changeVolume(-iRIncrement);
       timeOfLastIRChange = millis();
     }
-    if ((results.value == 2011291790) or (results.value == 2011238542)) {
+    if ((results.value == 2011291665) or (results.value == 2011238417)) {
       lastIRoperation = "changeInput";
       changeInput();
       delay(500);
       timeOfLastIRChange = millis();
     }
-    if (results.value == 2011265678) {
+    if (results.value == 2011250705) {
       lastIRoperation = "playPause";
       changeMute();
       timeOfLastIRChange = millis();
