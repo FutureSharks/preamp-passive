@@ -16,7 +16,7 @@ http://www.diyaudio.com/forums/analog-line-level/275446-passive-preamp-arduino-b
 
   * MCP23S17: Controlled via SPI. This is the R2R relayed attenuator and controls the volume.
   * MCP23S08: Controlled via SPI. For the input selector and mute.
-  * NeoPixel: Controlled via a single-wire control protocol.
+  * Adafruit NeoPixel: Controlled via a single-wire control protocol.
   * IR sensor: Standard 38Khz type.
   * Bourns EM14 Rotary Optical Encoder with switch
 
