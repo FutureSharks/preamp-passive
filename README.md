@@ -1,26 +1,29 @@
 # Preamp - Passive
 
-This is the Arduino code and PCB layouts for a HiFi passive preamplifier. It has the following features:
+This is the Arduino code, PCB layouts and 3D drawings for a HiFi passive preamplifier. It has the following features:
 
   * Volume control and input selection via encoder and Apple remote.
   * Uses a 256 step R2R relayed based attenuator.
   * Completely passive.
   * Only 5V power required.
-  * NeoPixel shows volume level with colour.
+  * [Adafruit NeoPixel](http://www.adafruit.com/category/168) shows volume level with colour.
   * Sleep mode with low power consumption: 0.9W.
 
-Full details can be found here:
+Full build details can be found here:
 http://www.diyaudio.com/forums/analog-line-level/275446-passive-preamp-arduino-based-remote-control-relay-r2r-input-selection.html
 
 ## Hardware
 
-  * MCP23S17: Controlled via SPI. This is the R2R relayed attenuator and controls the volume.
-  * MCP23S08: Controlled via SPI. For the input selector and mute.
-  * Adafruit NeoPixel: Controlled via a single-wire control protocol.
+  * [MCP23S17](http://www.microchip.com/wwwproducts/Devices.aspx?product=MCP23S17): Controlled via SPI. This is the R2R relayed attenuator and controls the volume.
+  * [MCP23S08](http://www.microchip.com/wwwproducts/Devices.aspx?product=MCP23S08): Controlled via SPI. For the input selector and mute.
+  * [Adafruit NeoPixel](http://www.adafruit.com/category/168): Controlled via a single-wire control protocol.
   * IR sensor: Standard 38Khz type.
-  * Bourns EM14 Rotary Optical Encoder with switch
+  * [Bourns EM14](https://www.bourns.com/pdfs/em14.pdf) Rotary Optical Encoder with switch.
+  * [Modushop Galaxy Maggiorato GX187](http://www.modu.it/galaxyeng.html) with custom machined front and rear.
 
 PCB and schematics are provided in EAGLE PCB format.
+
+Front and rear panel 3D drawings are in AutoCAD format.
 
 The IRremote library is from here:
 https://github.com/z3t0/Arduino-IRremote
