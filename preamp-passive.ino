@@ -23,9 +23,9 @@ bool debugEnabled = false;
 
 // IR stuff
 #include "IRremote.h"
-int RECV_PIN = A0;  // IR Receiver pin
-const int IRGroundPin = A1;
-const int IRPowerPin = A2;
+int RECV_PIN = A3;  // IR Receiver pin
+const int IRGroundPin = A4;
+const int IRPowerPin = A5;
 IRrecv irrecv(RECV_PIN);
 decode_results results;
 String lastIRoperation;
